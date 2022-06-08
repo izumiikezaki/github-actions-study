@@ -5,8 +5,8 @@ GithubActions学習用リポジトリ。
 
 
 ## ワークフローを設定する
-公式ドキュメントのクイックスタートをやってみる
-https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions
+公式ドキュメントの[クイックスタート](https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions)をやってみる
+
 
 ## 1:echoするワークフロー
 
