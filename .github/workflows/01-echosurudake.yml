@@ -8,5 +8,5 @@ jobs:
   Mainichi-Echo: #ここがジョブのタイトル
     runs-on: ubuntu-latest
     steps:
-      - name: 毎日実行のechoを実施 #ここの内容がステップの見出しとなる。ない場合は「Run echo "これは定期実行のワークフローです。"」
+      - name: 🦀🦀🦀 #ここの内容がステップの見出しとなる。ない場合は「Run echo "これは定期実行のワークフローです。"」
         run: echo "毎日echoです。"
