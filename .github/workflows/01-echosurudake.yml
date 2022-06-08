@@ -5,8 +5,8 @@ on:
     # 毎日12:00に実行する
     # 時間はUTCであることに注意
 jobs:
-  Explore-GitHub-Actions:
+  Mainichi-Echo: #ここがワークフローのタイトル
     runs-on: ubuntu-latest
     steps:
-      - name: 定期実行のechoを実施 #ここの内容がワークフローの見出しとなるない場合は「Run echo "これは定期実行のワークフローです。"」
+      - name: 定期実行のechoを実施 #ここの内容がステップの見出しとなる。ない場合は「Run echo "これは定期実行のワークフローです。"」
         run: echo "これは定期実行のワークフローです。"
