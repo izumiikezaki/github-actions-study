@@ -3,11 +3,12 @@ on:
   schedule:
     - cron: "0 3 * * *" 
     # 毎日12:00に実行する
-  push:
+  workflow_dispatch:
 jobs:
   update-waka-box:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: waka-box
         uses: matchai/waka-box@master
         env:
