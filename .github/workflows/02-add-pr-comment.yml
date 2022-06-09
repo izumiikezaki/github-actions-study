@@ -1,14 +1,14 @@
 name: prにコメントを足す
 on:
-  issue_comment:
-    types: [ created ] # pr(またはissue)にコメントされたとき
+  pull_request_review_comment:
+    types: [ created ] # prにコメントされたとき
   pull_request:
     types: [ edited ]
 jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # ghコマンドを使うため
     steps:
       - uses: actions/checkout@v2 # このアクションを行わないとリポジトリ内のスクリプト等が参照できない。
       - name: 作成されたPRにコメントを足します
