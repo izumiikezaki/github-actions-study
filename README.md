@@ -11,6 +11,13 @@ GithubActions学習用リポジトリ。
 ## 1:echoするワークフロー
 
 ## 2:PR作成でコメントを追加するbashが走るワークフロー
+ワークフロー内でシェルスクリプトを動かすために：
+ - `- uses: actions/checkout@v2`　をアクションに追加
+ - `git update-index --add --chmod=+x ./scripts/02-add-issue-comment.sh`をローカルで行って実行
+ 
+
+> **Warning**
+> issue_commentのトリガーはmasterにマージされていないと動かないらしい。
 
 ## 3:マーケットプレイスのアクションが動くワークフロー
 
