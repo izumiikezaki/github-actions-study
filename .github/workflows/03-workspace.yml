@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "0 3 * * *" 
     # 毎日12:00に実行する
+  push:
 jobs:
   update-waka-box:
     runs-on: ubuntu-latest
