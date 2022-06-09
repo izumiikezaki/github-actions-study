@@ -15,6 +15,7 @@ jobs:
         run: ./scripts/02-add-pr-comment.sh ${{ github.event.issue.number }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # ghコマンドを使うため
+          COMMNENT_SENDER: ${{ github.event.sender.login }}
 
   add-issue-comment:
     name: issueの時はこっちが動く
