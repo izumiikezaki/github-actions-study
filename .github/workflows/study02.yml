@@ -37,4 +37,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # python内でトークン取得するため
           GH_REPO: ${{ github.repository }}
-          COMMNENT_SENDER: ${{ github.event.issue.sender.login }}
+          COMMNENT_SENDER: ${{ github.event.sender.login }}
