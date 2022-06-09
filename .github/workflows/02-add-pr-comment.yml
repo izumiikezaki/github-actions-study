@@ -1,11 +1,11 @@
 name: prにコメントを足す
 on:
-  pull_request:
-    types: [ opened ] # prが作られたとき
+  pull_request_review:
+    types: [ submitted ] # prにコメントされたとき
 jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 #このアクションを行わないとリポジトリ内のスクリプト等が参照できない。
-      - name: 作成されたPRにコメントを足します
+      - name: PRにコメントを足します
         run: ./scripts/02-add-pr-comment.sh ${{ github.event.pull_request.number }}
