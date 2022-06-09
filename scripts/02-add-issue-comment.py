@@ -4,8 +4,7 @@ import os
 
 args = sys.argv
 
-ISSUE_NUM = args[1]
-print(args)
+ISSUE_NUM = int(args[1])
 print(ISSUE_NUM)
 
 token = os.getenv("GH_TOKEN")
