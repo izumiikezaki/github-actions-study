@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # githubでボタンを押したときに動く
 
 jobs:
-  Mainichi-Echo:
+  echo-surudake:
     name: echoするだけジョブ # ここがジョブのタイトル
     runs-on: ubuntu-latest
     steps:
