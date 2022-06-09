@@ -1,7 +1,6 @@
 name: prにコメントを足す
 on:
-  issue_comment:
-    types: [created, edited] # prかissueにコメントされたとき
+  issue_comment: # prかissueにコメントされたとき
 jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
