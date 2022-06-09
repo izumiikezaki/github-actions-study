@@ -7,6 +7,8 @@ on:
 jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2 # このアクションを行わないとリポジトリ内のスクリプト等が参照できない。
       - name: 作成されたPRにコメントを足します
