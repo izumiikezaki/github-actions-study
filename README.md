@@ -8,17 +8,24 @@ GithubActions学習用リポジトリ。
 公式ドキュメントの[クイックスタート](https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions)をやってみる
 
 
-## 1:echoするワークフロー
+## study01:echoするワークフロー
+[ここ](https://github.com/izumiikezaki/github-actions-study/actions/workflows/study01.yml)から「run workflow」のボタン押すとただhogeをechoするだけ。
 
-## 2:PR作成でコメントを追加するbashが走るワークフロー
-ワークフロー内でシェルスクリプトを動かすために：
- - `- uses: actions/checkout@v2`　をアクションに追加
- - `git update-index --add --chmod=+x ./scripts/02-add-issue-comment.sh`をローカルで行って実行
+## study02:PR作成でコメントを追加するbashが走るワークフロー
+このリポジトリのPRまたはissueでコメントを残すとbotが返事（？）してくる。
+PRへの返信はbash、issueへの返事はpythonのスクリプトを使っている。
+
+
+コード上ではわからないが、これらのようにワークフロー内でスクリプトを動かすには`git update-index --add --chmod=+x (スクリプトのパス)`を行って権限を許可しなければいけない。
  
 
-> **Warning**
-> issue_commentのトリガーはmasterにマージされていないと動かないらしい。
+> **Warning**  
+> issue_commentのトリガーはmasterにマージされていないと動かないらしい。（つまりこのワークフローを作るPR内で検証できない）  
+> ちょっとした罠じゃん。
 
-## 3:マーケットプレイスのアクションが動くワークフロー
+## study03:マーケットプレイスのアクションが動くワークフロー
+毎日wakatimeの履歴がgistに更新されるワークフロー（のはずだったがうまく動かない）。  
+マーケットプレイスの[waka-box](https://github.com/marketplace/actions/waka-box)というアクションを利用した例として出す予定だった。<br/>
+<img src="https://user-images.githubusercontent.com/39111330/172936254-f0114021-0aff-4285-af67-ba3631ff7656.png" width="320px">
 
 ## 4:カスタムのアクションが動くワークフロー
