@@ -3,7 +3,7 @@ on:
   issue_comment:
     types: [ created ] # pr(またはissue)にコメントされたとき
   pull_request:
-    types: [ opened ]
+    types: [ edited ]
 jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
