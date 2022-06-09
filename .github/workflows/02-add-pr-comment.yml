@@ -9,5 +9,6 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # ghコマンドを使うため
     steps:
       - uses: actions/checkout@v2 # このアクションを行わないとリポジトリ内のスクリプト等が参照できない。
-      - name: 作成されたPRにコメントを足します
-        run: ./scripts/02-add-pr-comment.sh ${{ github.event.pull_request.number }}
+      - run: echo "test"
+      # - name: 作成されたPRにコメントを足します
+      #   run: ./scripts/02-add-pr-comment.sh ${{ github.event.pull_request.number }}
