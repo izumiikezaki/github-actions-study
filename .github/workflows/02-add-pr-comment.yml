@@ -1,13 +1,26 @@
-name: prにコメントを足す
+name: prまたはissueにコメントを足す
 on:
   issue_comment: # prかissueにコメントされたとき
+  
 jobs:
   add-pr-comment:
+    name: PRの時はこっちが動く
+    if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # ghコマンドを使うため
     steps:
       - uses: actions/checkout@v2 # このアクションを行わないとリポジトリ内のスクリプト等が参照できない。
-      - run: echo "test"
-      # - name: 作成されたPRにコメントを足します
-      #   run: ./scripts/02-add-pr-comment.sh ${{ github.event.pull_request.number }}
+      - name: 作成されたPRにコメントを足します
+        run: ./scripts/02-add-pr-comment.sh ${{ github.event.pull_request.number }}
+
+  add-issue-comment:
+    name: issueの時はこっちが動く
+    if: ${{ !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # ghコマンドを使うため
+    steps:
+      - uses: actions/checkout@v2 # このアクションを行わないとリポジトリ内のスクリプト等が参照できない。
+      - name: 作成されたPRにコメントを足します
+        run: ./scripts/02-add-issue-comment.sh ${{ github.event.issue.number }}
