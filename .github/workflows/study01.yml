@@ -1,0 +1,12 @@
+name: echoするだけ #ここがワークフローのタイトル
+
+on:
+  workflow_dispatch: # githubでボタンを押したときに動く
+
+jobs:
+  echo-surudake:
+    name: echoするだけジョブ # ここがジョブのタイトル
+    runs-on: ubuntu-latest
+    steps:
+      - name: echoするとこ # ここの内容がステップのタイトル
+        run: echo "hoge"
