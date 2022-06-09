@@ -5,6 +5,8 @@ import os
 args = sys.argv
 
 ISSUE_NUM = args[1]
+print(args)
+print(ISSUE_NUM)
 
 token = os.getenv("GH_TOKEN")
 repo_name = os.getenv("GH_REPO")
