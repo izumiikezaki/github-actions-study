@@ -29,7 +29,8 @@ git update-index --add --chmod=+x (スクリプトのパス)
   
 ## study03: マーケットプレイスのアクションが動くワークフロー
 毎日wakatimeの履歴がgistに更新されるワークフロー（のはずだったがうまく動かない）。  
-マーケットプレイスの[waka-box](https://github.com/marketplace/actions/waka-box)というアクションを利用した例として出す予定だった。<br/>
+マーケットプレイスの[waka-box](https://github.com/marketplace/actions/waka-box)というアクションを利用した例として出す予定だった。
+[:octocat:gist](https://gist.github.com/izumiikezaki/46209660b0e4babf3325c15a8716f51a)
 <img src="https://user-images.githubusercontent.com/39111330/172936254-f0114021-0aff-4285-af67-ba3631ff7656.png" width="320px">
   
 APIキーとかの値はActions secretsとして隠せるから安心
