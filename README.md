@@ -16,7 +16,11 @@ PRまたはissueでコメントを残すとbotが返事（？）してくる。
 PRへの返信はbash、issueへの返事はpythonのスクリプトをで書いた。
 
 
-コード上ではわからないが、これらのようにワークフロー内でスクリプトを動かすには`git update-index --add --chmod=+x (スクリプトのパス)`を行って権限を許可しなければいけない。
+コード上ではわからないが、これらのようにワークフロー内でスクリプトを動かすには
+``` bash
+git update-index --add --chmod=+x (スクリプトのパス)
+```
+を行って権限を許可しなければいけない。
  
 
 > **Warning**  
@@ -25,11 +29,23 @@ PRへの返信はbash、issueへの返事はpythonのスクリプトをで書い
   
 ## study03: マーケットプレイスのアクションが動くワークフロー
 毎日wakatimeの履歴がgistに更新されるワークフロー（のはずだったがうまく動かない）。  
-マーケットプレイスの[waka-box](https://github.com/marketplace/actions/waka-box)というアクションを利用した例として出す予定だった。<br/>
+マーケットプレイスの[waka-box](https://github.com/marketplace/actions/waka-box)というアクションを利用した例として出す予定だった。
+[:octocat:gist](https://gist.github.com/izumiikezaki/46209660b0e4babf3325c15a8716f51a)
 <img src="https://user-images.githubusercontent.com/39111330/172936254-f0114021-0aff-4285-af67-ba3631ff7656.png" width="320px">
   
 APIキーとかの値はActions secretsとして隠せるから安心
 ![image](https://user-images.githubusercontent.com/39111330/172970674-c0786c24-1ee2-43e7-a192-fa4ccdfdeff8.png)
 
 
-## study04: カスタムのアクションが動くワークフロー
+## study04: オリジナルのアクションが動くワークフロー
+とりあえず[公式ドキュメント](https://docs.github.com/ja/actions/creating-actions/creating-a-javascript-action#creating-a-readme)をそのままはっつけて、study01みたいにボタンでうごくようにしただけ。  
+study03みたいなアクションを自分で作れるらしい。
+こうやって作ったオリジナルアクションはいろんなリポジトリで呼び出したり[マーケットプレイス](https://github.com/marketplace?type=actions)で公開できる。  
+リポジトリ内の
+- `action.yml`
+- `index.js`
+- `package-lock.json`
+- `package.json`
+- `node_modules/*`  
+
+はこれで使っている。 
