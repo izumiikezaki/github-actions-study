@@ -1,7 +1,8 @@
 name: 【02】prまたはissueにコメントを足す
 on:
-  issue_comment: # prかissueにコメントされたとき
-  
+  issue_comment:
+    types: [created] # prかissueにコメントされたとき
+
 jobs:
   add-pr-comment:
     name: PRの時はこっちが動く
