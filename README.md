@@ -38,9 +38,8 @@ APIキーとかの値はActions secretsとして隠せるから安心
 
 
 ## study04: オリジナルのアクションが動くワークフロー
-とりあえず[公式ドキュメント](https://docs.github.com/ja/actions/creating-actions/creating-a-javascript-action#creating-a-readme)をそのままはっつけて、study01みたいにボタンでうごくようにしただけ。  
-study03みたいなアクションを自分で作れるらしい。
-こうやって作ったオリジナルアクションは別のリポジトリで呼び出したり[マーケットプレイス](https://github.com/marketplace?type=actions)で公開できる。  
+とりあえず[公式ドキュメント](https://docs.github.com/ja/actions/creating-actions/creating-a-javascript-action#creating-a-readme)をそのままはっつけてstudy01みたいにボタンで動くようにしただけのアクション。  
+こうやって作ったオリジナルアクションは別のリポジトリで呼び出したりstudy03のように[マーケットプレイス](https://github.com/marketplace?type=actions)で公開できる。  
 リポジトリ内の
 - `action.yml`
 - `index.js`
