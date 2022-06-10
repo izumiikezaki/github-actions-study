@@ -1,0 +1,24 @@
+{
+  "name": "github-actions-study",
+  "version": "1.0.0",
+  "description": "GithubActions学習用リポジトリ。  \r 学習目的のため、コードにコメント付けまくりです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izumiikezaki/github-actions-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izumiikezaki/github-actions-study/issues"
+  },
+  "homepage": "https://github.com/izumiikezaki/github-actions-study#readme",
+  "dependencies": {
+    "@actions/core": "^1.8.2",
+    "@actions/github": "^5.0.3"
+  }
+}
