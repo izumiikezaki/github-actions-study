@@ -4,11 +4,11 @@ GithubActions学習用リポジトリ。
 
 
   
-## ワークフローを設定する
+## study00: 公式が用意したクイックスタートのワークフロー
 公式ドキュメントの[クイックスタート](https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions)をやってみる
 
   
-## study01: echoするワークフロー
+## study01: echoするだけのワークフロー
 [ここ](https://github.com/izumiikezaki/github-actions-study/actions/workflows/study01.yml)から「run workflow」のボタン押すとただhogeをechoするだけ。
 
 ## study02:PR作成でコメントを追加するbashが走るワークフロー
