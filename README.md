@@ -16,7 +16,11 @@ PRまたはissueでコメントを残すとbotが返事（？）してくる。
 PRへの返信はbash、issueへの返事はpythonのスクリプトをで書いた。
 
 
-コード上ではわからないが、これらのようにワークフロー内でスクリプトを動かすには`git update-index --add --chmod=+x (スクリプトのパス)`を行って権限を許可しなければいけない。
+コード上ではわからないが、これらのようにワークフロー内でスクリプトを動かすには
+``` bash
+git update-index --add --chmod=+x (スクリプトのパス)
+```
+を行って権限を許可しなければいけない。
  
 
 > **Warning**  
@@ -32,4 +36,15 @@ APIキーとかの値はActions secretsとして隠せるから安心
 ![image](https://user-images.githubusercontent.com/39111330/172970674-c0786c24-1ee2-43e7-a192-fa4ccdfdeff8.png)
 
 
-## study04: カスタムのアクションが動くワークフロー
+## study04: オリジナルのアクションが動くワークフロー
+とりあえず[公式ドキュメント](https://docs.github.com/ja/actions/creating-actions/creating-a-javascript-action#creating-a-readme)をそのままはっつけて、study01みたいにボタンでうごくようにしただけ。  
+study03みたいなアクションを自分で作れるらしい。
+こうやって作ったオリジナルアクションはいろんなリポジトリで呼び出したり[マーケットプレイス](https://github.com/marketplace?type=actions)で公開できる。  
+リポジトリ内の
+- `action.yml`
+- `index.js`
+- `package-lock.json`
+- `package.json`
+- `node_modules/*`  
+
+はこれで使っている。 
