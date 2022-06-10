@@ -22,7 +22,7 @@ PRへの返信はbash、issueへの返信はpythonのスクリプトをで書い
 > ``` bash
 > git update-index --add --chmod=+x (スクリプトのパス)
 > ```
-> を行って権限を許可しなければいけない。
+> を行って実行権限を与える。
  
 
 > **Note**  
