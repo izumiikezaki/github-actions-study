@@ -11,9 +11,9 @@ GithubActions学習用リポジトリ。
 ## study01: echoするだけのワークフロー
 [ここ](https://github.com/izumiikezaki/github-actions-study/actions/workflows/study01.yml)から「run workflow」のボタン押すとただhogeをechoするだけ。
 
-## study02:PR作成でコメントを追加するbashが走るワークフロー
+## study02:PRやissueにコメントを追加するとbotもコメントしてくるワークフロー
 PRまたはissueでコメントを残すとbotが返事（？）してくる。
-PRへの返信はbash、issueへの返信はpythonのスクリプトをで書いた。
+PRへの返信はbash、issueへの返信はpythonのスクリプトで書いた。
 - [ghコマンド](https://cli.github.com/manual/)
 - [PyGithub](https://pygithub.readthedocs.io/en/latest/introduction.html)
 
