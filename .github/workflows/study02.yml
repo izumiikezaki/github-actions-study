@@ -1,4 +1,4 @@
-name: prまたはissueにコメントを足す
+name: 【02】prまたはissueにコメントを足す
 on:
   issue_comment: # prかissueにコメントされたとき
   

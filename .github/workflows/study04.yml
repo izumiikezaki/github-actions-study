@@ -1,4 +1,4 @@
-name: オリジナルのアクション実行
+name: 【04】オリジナルのアクション実行
 
 on: 
   workflow_dispatch: 

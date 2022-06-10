@@ -1,4 +1,4 @@
-name: echoするだけ #ここがワークフローのタイトル
+name: 【01】echoするだけ #ここがワークフローのタイトル
 
 on:
   workflow_dispatch: # githubでボタンを押したときに動く
