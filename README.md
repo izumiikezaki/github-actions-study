@@ -28,4 +28,8 @@ PRへの返信はbash、issueへの返事はpythonのスクリプトをで書い
 マーケットプレイスの[waka-box](https://github.com/marketplace/actions/waka-box)というアクションを利用した例として出す予定だった。<br/>
 <img src="https://user-images.githubusercontent.com/39111330/172936254-f0114021-0aff-4285-af67-ba3631ff7656.png" width="320px">
   
+APIキーとかの値はActions secretsとして隠せるから安心
+![image](https://user-images.githubusercontent.com/39111330/172970674-c0786c24-1ee2-43e7-a192-fa4ccdfdeff8.png)
+
+
 ## study04: カスタムのアクションが動くワークフロー
