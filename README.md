@@ -12,6 +12,7 @@ GithubActions学習用リポジトリ。
 [ここ](https://github.com/izumiikezaki/github-actions-study/actions/workflows/study01.yml)から「run workflow」のボタン押すとただhogeをechoするだけ。
 
 ## study02:PR作成でコメントを追加するbashが走るワークフロー
+[![echoするだけ](https://github.com/izumiikezaki/github-actions-study/actions/workflows/study01.yml/badge.svg)](https://github.com/izumiikezaki/github-actions-study/actions/workflows/study01.yml)
 このリポジトリのPRまたはissueでコメントを残すとbotが返事（？）してくる。
 PRへの返信はbash、issueへの返事はpythonのスクリプトを使っている。
 
