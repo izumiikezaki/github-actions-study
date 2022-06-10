@@ -1,4 +1,5 @@
 # github-actions-study
+test
 GithubActions学習用リポジトリ。  
 学習目的のため、コードにコメント付けまくりです。  
 
