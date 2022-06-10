@@ -14,7 +14,8 @@ GithubActions学習用リポジトリ。
 ## study02:PR作成でコメントを追加するbashが走るワークフロー
 PRまたはissueでコメントを残すとbotが返事（？）してくる。
 PRへの返信はbash、issueへの返信はpythonのスクリプトをで書いた。
-
+- [ghコマンド](https://cli.github.com/manual/)
+- [PyGithub](https://pygithub.readthedocs.io/en/latest/introduction.html)
 
 > **Note**  
 > コード上ではわからないが、これらのようにワークフロー内でスクリプトを動かすには  
